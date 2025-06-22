@@ -23,12 +23,6 @@ This project serves as the gateway to JabTV—a modern, responsive landing page 
 
 ---
 
-## 🖼️ Demo
-
-> _Insert a screenshot or GIF here showing the landing page in action!_
-
----
-
 ## 📂 Folder Structure
 
 ```
