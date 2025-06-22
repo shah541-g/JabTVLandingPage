@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JabTV</title>
+
+    <!-- Web page CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Simple Lightbox CSS -->
+    <link rel="stylesheet" href="./assets/css/simple-lightbox.min.css">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png">
+
+    <link rel="icon" href="./assets/icons/favicon-32x32.png" type="image/png"sizes="32x32">
+
+    <link rel="icon" href="./assets/icons/favicon-16x16.png" type="image/png" sizes="16x16">
+
+    <title>JabTV Landing Page</title>
+
+</head>
+<body>
+
+    <div class="container">
+        <!-- Navbar -->
+        <nav>
+            <a href="#" class="logo">
+                <h1>
+                    <span class="jab">Jab</span><span class="tv">TV</span><span class="fist">&#x1F44A;</span></h1>
+            </a>
+            
+            <ul>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#stars" class="nav-link">Boxing Stars</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#stakeholders" class="nav-link">Stakeholders</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sub" class="nav-link">Subscribe</a>
+                </li>
+            </ul>
+            <div class="hamburger active" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        
+        <!-- Dark/Light theme switcher -->
+
+        <!-- Bars -->
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="intro-text">
+                <h1>
+                    <span class="hear">You can Hear the Jabs</span>
+                    <span class="connecting">Connecting</span>
+                </h1>
+                <p>An oline streaming platform for boxing matches <br />
+                We also dedicate some special time to throwbacks cuz old is gold</p>
+                <a href="#" class="btn red">Learn More</a><a href="" class="btn blue">Subscribe</a>
+            </div>
+            <div class="i-frame">
+                <iframe src="https://www.youtube.com/embed/sUmM_PFpsvQ" width="500"
+                height="315" title="Youtube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                <div class="stand-1"></div>
+                <div class="stand-2"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about">
+            <h3>Watch the Jabs</h3>
+            <p>Our primary objective is to bring live boxing matches to fans all around the world</p>
+            <h3>Its not About the Fights Alone!</h3>
+            <p>We also air documentaries specifically made for the greats, lifestyle pf boxers, news and more</p>
+        </section>
+        
+        <section class="gallery-section">
+            <h3>Watchout Our Gallery</h3>
+            <!-- Pagination for gallery -->
+            <ul class="gallery">
+            <!-- <li>&lt;</li> -->
+            <li class="gallery-item">
+                <img src="./assets/images/img1.jpg" alt=""><span>Harry Malcalm</span>
+            </li>
+            <li class="gallery-item">
+                <img src="./assets/images/img2.webp" alt=""><span>Mike Tyson</span>
+            </li>
+            <li class="gallery-item">
+                <img src="./assets/images/img3.jpg" alt=""><span>Thomas Maclodam</span>
+            </li>
+            <li class="gallery-item">
+                <img src="./assets/images/img4.jpg" alt=""><span>Muhammad Hamza</span>
+            </li>
+            <!-- <li>&gt;</li> -->
+            </ul>
+        </section>
+
+        <!-- Jab TV Stakeholders -->
+        <section class="people" id="stakeholders">
+            <h3>Our StakeHolders</h3>
+            <div class="stakeholders">
+                <div class="persons">
+                    <div class="person-1">
+                        <img src="./assets/images/stake1.jpg" alt="">
+                        <p class="name">John Doe</p>
+                        <p class="role">Founder</p>
+                    </div>
+                    <div class="person-2">
+                        <img src="./assets/images/stake2.jpg" alt="">
+                        <p class="name">Jane Doe</p>
+                        <p class="role">MD</p>
+                    </div>
+                    <div class="person-3">
+                        <img src="./assets/images/stake3.jpg" alt="">
+                        <p class="name">John Doe JNR</p>
+                        <p class="role">Head Analyst</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Email Subscription -->
+        <section class="sub" id="sub">
+            <h3>Subscribe to our newsletter for updates</h3>
+            <form action="#">
+                <input 
+                type="email" 
+                name="email"
+                id="email-sub" class="email-sub" required>
+                <input type="Submit"
+                value="Subscribe" 
+                id="submit-btn" class="submit-btn"></form>
+        </section>
+
+        <!-- Social icons -->
+        <section class="social">
+            <h3>Connect with us on Social Media</h3>
+            <div>
+                <a href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+                <a href="">                                 <ion-icon name="logo-instagram"></ion-icon>
+                </a><a href="">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                </a></div>
+        </section>
+
+        <!-- Footer -->
+        <footer>&copy; 2025. All Rights Reserved</footer>
+
+        <!-- Scroll to top button -->
+        <i class="scroll-up" id="scroll-up"><img src="./assets/images/arrow.jpg" alt="up.arrow" class="socicon up-arrow"></i>
+
+        <!-- Audio Song -->
+        <audio id="backgroundAudio" autoplay loop>
+            <source src="./assets/audios/Muhammad Ali Black Superman Song.mp3" type="audio/mp3"/>
+            Your  browser does not support the audio element
+        </audio>
+
+        <!-- Mute/UnMute Button -->
+            <button id="muteButton">🔊</button>
+    </div>
+    <!-- Web page script -->
+    <script src="./assets/js/app.js"></script>
+
+
+    <!-- Ion icons SDN -->
+    <script 
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.j"
+    ></script>
+
+    <!-- Simple Lightbox -->
+    <script src="./assets/js/aimple-lightbox.min.js"></script>
+
+    <script>
+        // Simple lightbox initializer
+        const scrollUp = document.querySelector('#scroll-up');
+
+
+        scrollUp.addEventListener("click", () => {
+            window.scrollTo({
+                top:0,
+                left:0,
+                behavior:"smooth",
+            });
+        });
+
+        const audio = document.getElementById("backgroundAudio");
+        const button = document.getElementById("muteButton");
+
+        audio.volume = 1;
+        audio.muted = false;
+
+        button.addEventListener("click", () => {
+            audio.muted = !audio.muted;
+            button.textContent = audio.muted ? "🔇" : "🔊";
+        })
+
+        const hamburger = document.querySelector("#hamburger");
+        const navMenu = document.querySelector("ul");
+
+        function openMenu(){
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/* CSS Variables */
+:root{
+    --normal-font: 400;
+    --bold-font: 600;
+    --bolder-font: 900;
+    --primary-color: #0652dd;
+    --secondary-color: #ea2027;
+    --line-height: 1.7rem;
+    --transition: 0.4s ease-in;
+}
+
+/* Smooth Scroll effect */
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Resets */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: var(--transition);
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    background: #000;
+    color: white;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover{
+    color: var(--secondary-color);
+}
+
+.fist{
+    color: var(--secondary-color);
+}
+.jab{
+    color: var(--primary-color);
+}
+.tv{
+    color: var(--secondary-color);
+}
+.bar{
+    display: block;
+    border: solid;
+    margin: 0.15rem auto;
+    width: 2rem;
+    height: 0.5rem;
+    /* background: #000; */
+}
+nav{
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    box-shadow: 2px 3px 2px #f1f1f1;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.hamburger{
+    display: none;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 500;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item{
+    margin-left: 2rem;
+}
+.nav-link{
+    font-weight: var(--bold-font);
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.9rem;
+    max-width: 1100px;
+    margin: 2rem auto -6rem;
+
+}
+.connecting{
+    display: block;
+    color: var(--secondary-color);
+}
+.hear{
+    color: var(--primary-color);
+}
+.hero p{
+    line-height: var(--line-height);
+    /* background: #000; */
+}
+.intero-text h3{
+    margin-bottom: 0.5rem;
+}
+.intro-text h1{
+    font-style: 3rem;
+    margin-bottom: 1rem;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 0.6rem;
+    border: none;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.red{
+    background-color: var(--secondary-color);
+    margin-right: 1.5rem;
+}
+
+.red:hover{
+    background-color: #f1262d;
+    color: #fff;
+}
+
+.blue{
+    background: var(--primary-color);
+}
+
+.blue:hover{
+    background-color: #095cf7;
+    color: #fff;
+}
+iframe{
+    max-width: 30rem;
+    border-top: 40px groove var(--primary-color);
+    border-bottom: 40px groove var(--primary-color);
+    border-right: 28px solid var(--secondary-color);
+    border-left: 28px solid var(--secondary-color);
+}
+.stand-1{
+    height: 90px;
+    width: 6px;
+    background-color: var(--primary-color);
+    transform: rotate(40deg);
+    position: relative;
+    top: -16px;
+    left: 200px;
+}
+.stand-2{
+    height: 90px;
+    width: 6px;
+    background-color: var(--secondary-color);
+    transform: rotate(-40deg);
+    position: relative;
+    top: -105px;
+    left: 255px;
+}
+.about{
+    position: relative;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2rem 0;
+    background: url("../images/boxing-gloves.jpg");
+    background-size: cover;
+    color: #f1f1f1;
+    margin-bottom: 3rem;
+}
+
+.people{
+    margin-top: 2rem;
+    padding: 1rem 0;
+}
+
+.stakeholders{
+    margin: 2rem auto;
+    max-width: 100vw;
+}
+/* .persons{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    gap: 2rem;
+    
+}*/
+/* .person-1, .person-2, .person-3{
+    transition: all 1s;
+}  */
+
+.persons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+    max-width: 90vw;
+    margin: auto;
+}
+
+.persons > div {
+    flex: 1; 
+    max-width: 30%;  
+    /* background-color: gradient(2rem , var(--primary-color), var(--secondary-color));  */
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.persons img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Makes image a perfect square */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.name, .role {
+    margin: 4px 0;
+}
+
+.people > h3{
+    text-align: center;
+}
+
+.name{
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.role{
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.sub{
+    margin-top: 2rem;
+}
+
+.sub h3{
+    text-align: center;
+}
+
+form{
+    text-align: center;
+    margin: 0.4rem 2 rem;
+}
+
+.submit-btn{
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.3rem;
+    margin: 0 0.5rem;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.submit-btn:hover{
+    background-color: #095cf7;
+}
+
+
+.social{
+    text-align: center;
+    margin: 2rem;
+}
+
+.socicons{
+    font-size: 1.3rem;
+}
+
+footer{
+    border-top: 1px solid #f1f1f1;
+    box-shadow: 0px -2px 3px #f1f1f1;
+    text-align: center;
+    padding: 2rem;
+}
+
+
+.scroll-up{
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+}
+
+.up-arrow{
+    width: 3rem;
+    height: 3rem;
+}
+
+#muteButton {
+  background: none;
+  border: none;
+  font-size: 5rem;
+  cursor: pointer;
+  margin-left: 10px;
+  position: fixed;
+  left: 0.5%;
+  bottom: 3%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    ul{
+        background-color: #fff;
+        flex-direction: column;
+        position: fixed;
+        left: 100%;
+        top: 5rem;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-item{
+        margin: 2rem 0;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.hamburger.active .bar:nth-child(1){
+        transform: translateY(10px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-10px) rotate(-45deg);
+    }
+}
+.container{
+    margin: auto;
+}
