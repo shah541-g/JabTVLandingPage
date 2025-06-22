@@ -328,6 +328,7 @@ footer{
 }
 
 @media screen and (max-width: 768px){
+
     .hamburger{
         display: block;
         cursor: pointer;
@@ -356,4 +357,9 @@ footer{
 }
 .container{
     margin: auto;
+}
+@media (max-width: 600px){
+        .hero{
+        display: flex;
+    }
 }
